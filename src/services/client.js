@@ -4,9 +4,9 @@ export const client = createClient(
   process.env.REACT_APP_SUPABASE_KEY
 );
 
-export function checkError({ data, error }) {
+export function checkError({ blogs, error }) {
   if (error) {
     throw error;
   }
-  return data;
+  return blogs;
 }
